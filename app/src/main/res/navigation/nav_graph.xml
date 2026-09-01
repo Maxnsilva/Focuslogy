@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/splashFragment">
+
+    <fragment
+        android:id="@+id/splashFragment"
+        android:name="com.example.focuslogy.ui.fragment.SplashFragment"
+        android:label="Splash" />
+
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.example.focuslogy.ui.fragment.LoginFragment"
+        android:label="Login" />
+
+    <fragment
+        android:id="@+id/cadastroFragment"
+        android:name="com.example.focuslogy.ui.fragment.CadastroFragment"
+        android:label="Cadastro" />
+
+    <fragment
+        android:id="@+id/esqueceuSenhaFragment"
+        android:name="com.example.focuslogy.ui.fragment.EsqueceuSenhaFragment"
+        android:label="Esqueceu a Senha" />
+
+    <fragment
+        android:id="@+id/nav_dashboard"
+        android:name="com.example.focuslogy.ui.fragment.DashboardFragment"
+        android:label="Início" />
+
+    <fragment
+        android:id="@+id/nav_materias"
+        android:name="com.example.focuslogy.ui.fragment.MateriasFragment"
+        android:label="Minhas Matérias" />
+
+    <fragment
+        android:id="@+id/formularioMateriaFragment"
+        android:name="com.example.focuslogy.ui.fragment.FormularioMateriaFragment"
+        android:label="Formulário Matéria">
+        <argument
+            android:name="materiaId"
+            app:argType="integer"
+            android:defaultValue="0" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/novaSessaoFragment"
+        android:name="com.example.focuslogy.ui.fragment.NovaSessaoFragment"
+        android:label="Nova Sessão" />
+
+    <fragment
+        android:id="@+id/cronometroFragment"
+        android:name="com.example.focuslogy.ui.fragment.CronometroFragment"
+        android:label="Cronômetro">
+        <argument android:name="materiaId" app:argType="integer" />
+        <argument android:name="minutos" app:argType="integer" />
+        <argument android:name="assunto" app:argType="string" />
+        <argument android:name="tecnica" app:argType="string" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_historico"
+        android:name="com.example.focuslogy.ui.fragment.HistoricoFragment"
+        android:label="Histórico" />
+
+    <fragment
+        android:id="@+id/tecnicasFragment"
+        android:name="com.example.focuslogy.ui.fragment.TecnicasFragment"
+        android:label="Técnicas de Estudo" />
+
+    <fragment
+        android:id="@+id/nav_sobre"
+        android:name="com.example.focuslogy.ui.fragment.SobreFragment"
+        android:label="Sobre" />
+
+    <fragment
+        android:id="@+id/perfilFragment"
+        android:name="com.example.focuslogy.ui.fragment.PerfilFragment"
+        android:label="Perfil" />
+
+    <fragment
+        android:id="@+id/metasFragment"
+        android:name="com.example.focuslogy.ui.fragment.MetasFragment"
+        android:label="Metas" />
+
+    <fragment
+        android:id="@+id/relatoriosFragment"
+        android:name="com.example.focuslogy.ui.fragment.RelatoriosFragment"
+        android:label="Relatórios" />
+
+</navigation>

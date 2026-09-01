@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.Focuslogy" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Main theme colors are handled by the Compose Theme -->
+    </style>
+    <style name="Theme.Focuslogy.NoActionBar" parent="Theme.Focuslogy" />
+</resources>
